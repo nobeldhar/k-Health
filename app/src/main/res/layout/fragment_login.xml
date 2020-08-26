@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.kpsoftwaresolutions.khealth.ui.fragments.login.LoginViewModel" />
+    </data>
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="LOGIN"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            android:background="@drawable/edit_text_border"
+                            android:paddingStart="20dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:gravity="center_vertical"
+                            android:id="@+id/login_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="Username"
+                            android:inputType="textEmailAddress"
+                            android:text="@={viewmodel.username}"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:id="@+id/pass_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:background="@drawable/edit_text_border"
+                            android:paddingStart="20dp"
+                            android:id="@+id/login_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:text="@={viewmodel.password}"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/login_button"
+                        android:elevation="10dp"
+                        android:stateListAnimator="@null"
+                        android:onClick="@{viewmodel::onLoginButton}"
+                        android:text="login"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/login_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</layout>

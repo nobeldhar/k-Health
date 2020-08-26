@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "62702650804",
+    "firebase_url": "https://k-health-90910.firebaseio.com",
+    "project_id": "k-health-90910",
+    "storage_bucket": "k-health-90910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62702650804:android:d4c427cfc0e0e1a983dee1",
+        "android_client_info": {
+          "package_name": "becker.andy.quickbloxsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62702650804-e208l4rl03lu03d7iidsqpq2o3qq3l4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu-UDjTTeS7PQ_bT-yH02WfClZMBJVXuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62702650804-e208l4rl03lu03d7iidsqpq2o3qq3l4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62702650804:android:56eaf866b8c0df3a83dee1",
+        "android_client_info": {
+          "package_name": "com.kpsoftwaresolutions.khealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62702650804-e208l4rl03lu03d7iidsqpq2o3qq3l4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu-UDjTTeS7PQ_bT-yH02WfClZMBJVXuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62702650804-e208l4rl03lu03d7iidsqpq2o3qq3l4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
